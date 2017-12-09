@@ -42,5 +42,15 @@ public class CodonCount {
         return ans;
     }
 
-
+    void printCodonCounts(int start,int end)
+    {
+        for(String key : mymap.keySet())
+        {
+            int value = mymap.get(key);
+            if(value >=start && value <=end)
+            {
+               System.out.println(key + "  " + value);
+            }
+        }
+    }
 }
