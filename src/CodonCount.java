@@ -26,5 +26,21 @@ public class CodonCount {
         }
     }
 
-    
+    String getMostCommonCodon()
+    {
+        String ans = "";
+        int mxsofar = -1;
+
+        for(String key : mymap.keySet())
+        {
+            if(mymap.get(key) > mxsofar)
+            {
+                mxsofar = mymap.get(key);
+                ans = key;
+            }
+        }
+        return ans;
+    }
+
+
 }
