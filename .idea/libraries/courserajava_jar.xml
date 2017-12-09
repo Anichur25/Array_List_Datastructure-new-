@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="courserajava.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../courserajava.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../courserajava.jar.zip!/" />
+    </SOURCES>
+  </library>
+</component>
