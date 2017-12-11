@@ -90,4 +90,15 @@ public class WordsInFiles {
         }
     }
 
+    int maxNumber()
+    {
+        int mxsofar = -1;
+        for(String key : mymap.keySet())
+        {
+            mxsofar = Math.max(mxsofar,mymap.get(key).size());
+
+        }
+
+        return mxsofar;
+    }
 }
