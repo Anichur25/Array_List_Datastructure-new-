@@ -101,4 +101,19 @@ public class WordsInFiles {
 
         return mxsofar;
     }
+
+    ArrayList<String> wordsInNumFiles(int number)
+    {
+        ArrayList<String> words = new ArrayList<String>();
+
+        for(String key : mymap.keySet())
+        {
+            if(mymap.get(key).size() == number)
+            {
+                words.add(key);
+            }
+        }
+
+        return words;
+    }
 }
