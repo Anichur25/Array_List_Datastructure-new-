@@ -79,4 +79,15 @@ public class WordsInFiles {
           }
        }
    }
+
+    void buildWordFileMap()
+    {
+        mymap.clear();
+        DirectoryResource dr = new DirectoryResource();
+        for(File f : dr.selectedFiles())
+        {
+            addWordsFromFile(f);
+        }
+    }
+
 }
