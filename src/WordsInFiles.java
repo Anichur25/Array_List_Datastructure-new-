@@ -116,4 +116,19 @@ public class WordsInFiles {
 
         return words;
     }
+    void printFilesIn(String word)
+    {
+        for(String key : mymap.keySet())
+        {
+
+            if(key.equals(word) == true)
+            {
+                for(int i = 0; i < mymap.get(key).size(); i++)
+                {
+                    System.out.println(mymap.get(key).get(i));
+                }
+                break;
+            }
+        }
+    }
 }
