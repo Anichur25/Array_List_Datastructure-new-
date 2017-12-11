@@ -116,6 +116,7 @@ public class WordsInFiles {
 
         return words;
     }
+
     void printFilesIn(String word)
     {
         for(String key : mymap.keySet())
@@ -131,4 +132,18 @@ public class WordsInFiles {
             }
         }
     }
+    void tester()
+    {
+        buildWordFileMap();
+        System.out.println("Maximum file number is: "+ maxNumber());
+        System.out.println(wordsInNumFiles(3));
+        printFilesIn("cats");
+    }
+
+    public static void main(String args[])
+    {
+        WordsInFiles ob = new WordsInFiles();
+        ob.tester();
+    }
 }
+
