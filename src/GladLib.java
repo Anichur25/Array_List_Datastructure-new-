@@ -39,5 +39,9 @@ public class GladLib {
         for(int i=0; i<9; i++)
             myMap.put(category[i], readIt(source + "/" + category[i] + ".txt"));
     }
+    private String randomFrom(ArrayList<String> list){
+        int index = myRandom.nextInt(list.size());
+        return list.get(index);
+    }
 
 }
